@@ -1,2 +1,2 @@
-# donatas-space
-donatas.space_html.academy_course_site
+# donatas-site
+donatas.site_html.academy_course_site
