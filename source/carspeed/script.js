@@ -1,13 +1,13 @@
-let laikas;
-let valst;
-let metrai;
-let sekundes;
-let masyvas;
-let speed;
-let cele1 = document.querySelector('.data_laikas');
-let cele2 = document.querySelector('.v_nr');
-let cele3 = document.querySelector('.greitis');
-let form = document.querySelector('.uzklausa');
+var laikas;
+var valst;
+var metrai;
+var sekundes;
+var masyvas;
+var speed;
+var cele1 = document.querySelector('.data_laikas');
+var cele2 = document.querySelector('.v_nr');
+var cele3 = document.querySelector('.greitis');
+var form = document.querySelector('.uzklausa');
 
 
 
