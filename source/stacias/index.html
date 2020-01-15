@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ploto, Perimetro ir Istrizaines skaiciavimas</title>
+</head>
+
+<body>
+    <style>
+        input[type=number],
+        select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 40%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 24px;
+            font-stretch: wider;
+            font-style: normal;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        body{
+            background-color: wheat;
+        }
+        .isvestis{
+            font-size: 24px;
+            display: block;
+            padding-left: 30px;
+            
+            
+        }
+        .uzklausa{
+            padding: 10px;
+        }
+        form input{
+            padding: 10px;
+            font-size: 16px;
+            color: grey;
+            font-style: italic;
+        }
+        form label{
+            font-size: 22px;
+            margin: 10px;
+        }
+    </style>
+
+
+    <div style="max-width: 70vw; margin: 50px auto;">
+        <div>
+            <form action="" class="uzklausa">
+                <label for="ilgis">Stačiakampio ilgis metrais</label>
+                <input type="number" id="ilgis" name="Ilgis" placeholder="Nurodykite ilgį" min="0" step="0.01" class="ilgioduomenys">
+
+                <label for="aukstis">Stačiakampio aukštis metrais</label>
+                <input type="number" id="aukstis" name="Aukstis" placeholder="Nurodykite aukštį" min="0" step="0.01" class="aukscioduomenys">
+
+                <input type="submit" value="Apskaičiuoti">
+            </form>
+        </div>
+        <div class="isvestis">
+            <p>Norėdami gauti stačiakampio plotą, perimetrą ir įstrižainę suveskite duomenis ir paspauskite viršuje esantį mygtuką.</p>
+        </div>
+
+        <script>
+            
+            let form = document.querySelector('.uzklausa');
+            let hight;
+            let width;
+            let perimeter;
+            let diagonal;
+            let area;
+
+            let ilgis = document.querySelector('.ilgioduomenys');
+            let aukstis = document.querySelector('.aukscioduomenys');
+            let pranesimas = document.querySelector('p');
+            
+            
+            form.onsubmit = function(evt) {
+                // instrukcija atsaukia duomenu issiuntima
+                evt.preventDefault();
+                hight = ilgis.value;
+                width = aukstis.value;
+                console.log(hight);
+                console.log(width);
+                console.log(pranesimas);
+                perimeter = hight * 2 + width * 2;
+                perimeter = perimeter.toFixed(2);
+
+                area = hight * width;
+                area = area.toFixed(2);
+
+                diagonal = Math.sqrt(Math.pow(hight, 2) + Math.pow(width, 2));
+                diagonal = diagonal.toFixed(2);
+                pranesimas.innerHTML = 'Pagal nurodytus duomenis: <br> Stačiakampio plotas -  ' + area + ' kv.m <br>' + 'Perimetras - ' + perimeter + ' m <br>' + 'Įstrižainė - ' +  diagonal + ' m';
+            };
+        </script>
+    </div>  
+</body>
+
+</html>

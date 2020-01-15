@@ -1,0 +1,38 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(png/triangle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-color: bisque;
+  height: 100vh;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.container h1 {
+  font-weight: 900;
+}
+
+button:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.atsakas {
+  padding: 40px 0px 100px 20px;
+  width: 50%;
+  background-color: rgba(181, 201, 108, 0.6);
+  border: palegoldenrod 1px solid;
+  border-radius: 10px;
+  -webkit-box-shadow: lightslategrey 1px 1px 10px 1px;
+          box-shadow: lightslategrey 1px 1px 10px 1px;
+}
+/*# sourceMappingURL=style.css.map */
