@@ -1,188 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" lang="lt" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ploto, Perimetro ir Istrizaines skaiciavimas</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <title>Pradedančio programuotojo patirčių laukas</title>
 </head>
 
 <body>
-    <style>
-        input[type=number],
-        select {
-            width: 20%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+  <header class="page-header">
+    <div class="container">
+      <a class="header-email" href="mailto:donatas.kulvinskas@yandex.ru">donatas.kulvinskas@yandex.ru</a>
+      <a class="header-phone" href="tel:+79777734648">+7 977 773 46 48</a>
+    </div>
+  </header>
 
-        input[type=submit] {
-            width: 40%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 24px;
-            font-stretch: wider;
-            font-style: normal;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 700;
-        }
+  <section class="hero-image">
+    <div class="container">
+      <h1 class="heading">Studentas Donatas</h1>
+      <p>Einantis kodo keliu</p>
+    </div>
+  </section>
 
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
+  <section class="intro">
+    <div class="container">
+      <figure class="user-image">
+        <img src="files/user.jpg" width="692" height="536" alt="Фотография 0познанного Енота">
+      </figure>
 
-        div {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-        body{
-            background-color: wheat;
-        }
-        .isvestis{
-            font-size: 24px;
-            display: block;
-            padding-left: 30px;
-            
-            
-        }
-        .uzklausa{
-            padding: 10px;
-        }
-        form input{
-            padding: 10px;
-            font-size: 16px;
-            color: grey;
-            font-style: italic;
-        }
-        form label{
-            font-size: 22px;
-            margin: 10px;
-        }
-        @media (max-width: 768px) {
-        input[type=number],
-        select {
-            width: 50%;
-            padding: 6px 10px;
-            margin: 5px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
-        }
+      <h2 class="subheading">Susipažinkime</h2>
+      <h3>Keletas žodžių apie save</h3>
+      <p>Nemažai matęs. Šiek tiek patyręs. Pusamžį nugyvenęs. Pradedantis pažinti. Kodą</p>
 
-        input[type=submit] {
-            width: 60%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 7px 10px;
-            margin: 4px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 18px;
-            font-stretch: wider;
-            font-style: normal;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 400;
-        }
+      <h3>Kuo galiu būti naudingas</h3>
+      <p>Solidi patirtis greito apyvartumo prekių distribucijos organizavime ir valdyme. Pradedančio patirtis kodo
+        rašyme.</p>
 
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
+      <div class="skills">
+        <h3>Mano įgūdžiai</h3>
+        <dl class="skills-list">
+          <dt class="skill-html">HTML</dt>
+          <dd class="level">
+            <div style="width: 38%;">38%</div>
+          </dd>
+          <dt class="skill-css">CSS</dt>
+          <dd class="level">
+            <div style="width: 21%;">21%</div>
+          </dd>
+          <dt class="skill-js">JavaScript</dt>
+          <dd class="level">
+            <div style="width: 4%;">4%</div>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </section>
 
-        div {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 10px;
-        }
-        body{
-            background-color: wheat;
-        }
-        .isvestis{
-            font-size: 18px;
-            display: block;
-            padding-left: 10px;
-            
-            
-        }
-        .uzklausa{
-            padding: 5px;
-        }
-        form input{
-            padding: 5px;
-            font-size: 12px;
-            color: black;
-            font-style: italic;
-        }
-        form label{
-            font-size: 16px;
-            margin: 5px;
-        }
-        }
-    </style>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="subheading">Mano darbai su JavaScript</h2>
+      
+      <h3>Trikampio tikrinimo puslapis</h3>
+      <figure class="project-image">
+        <img src="files/triangle.png"  style="width:928px; height:536px; border-radius: 10px;" alt="Trikampio skaiciavimai">
+      </figure>
+      <a class="button" href="source/triangle/index.html">Atidaryti puslapį</a>
+      <p style="margin-bottom: 50px;">Trikampio nustatymo, jo kraštinių ir ploto apskaičiavimo puslapis</p>
 
 
-    <div style="max-width: 70vw; margin: 50px auto;">
-        <div>
-            <form action="" class="uzklausa">
-                <label for="ilgis">Stačiakampio ilgis metrais</label>
-                <input type="number" id="ilgis" name="Ilgis" placeholder="Nurodykite ilgį" min="0" step="0.01" class="ilgioduomenys">
+      <h3>Stačiakampio puslapis</h3>
+      <figure class="project-image">
+        <img src="files/stacias.png"  style="width:928px; height:536px; border-radius: 10px;" alt="Staciakampio skaiciavimai">
+      </figure>
+      <a class="button" href="source/stacias/index.html">Atidaryti puslapį</a>
+      <p style="margin-bottom: 50px;">Stačiakampio ploto, perimetro ir įstrižainės apskaičiavimo puslapis</p>
 
-                <label for="aukstis">Stačiakampio aukštis metrais</label>
-                <input type="number" id="aukstis" name="Aukstis" placeholder="Nurodykite aukštį" min="0" step="0.01" class="aukscioduomenys">
+      <h3>Automobilio greičio puslapis</h3>
+      <figure class="project-image">
+        <img src="files/carspeed.png"  style="width:928px; height:536px; border-radius: 10px;" alt="Car speed skaiciavimai">
+      </figure>
+      <a class="button" href="source/carspeed/index.html">Atidaryti puslapį</a>
+      <p style="margin-bottom: 50px;">Automobilio greičio konvertavimas ir fiksavimas lentelėje</p>
+      
+    </div>
+  </section>
 
-                <input type="submit" value="Apskaičiuoti">
-            </form>
-        </div>
-        <div class="isvestis">
-            <p>Norėdami gauti stačiakampio plotą, perimetrą ir įstrižainę suveskite duomenis ir paspauskite viršuje esantį mygtuką.</p>
-        </div>
-
-        <script>
-            
-            let form = document.querySelector('.uzklausa');
-            let hight;
-            let width;
-            let perimeter;
-            let diagonal;
-            let area;
-
-            let ilgis = document.querySelector('.ilgioduomenys');
-            let aukstis = document.querySelector('.aukscioduomenys');
-            let pranesimas = document.querySelector('p');
-            
-            
-            form.onsubmit = function(evt) {
-                // instrukcija atsaukia duomenu issiuntima
-                evt.preventDefault();
-                hight = ilgis.value;
-                width = aukstis.value;
-                console.log(hight);
-                console.log(width);
-                console.log(pranesimas);
-                perimeter = hight * 2 + width * 2;
-                perimeter = perimeter.toFixed(2);
-
-                area = hight * width;
-                area = area.toFixed(2);
-
-                diagonal = Math.sqrt(Math.pow(hight, 2) + Math.pow(width, 2));
-                diagonal = diagonal.toFixed(2);
-                pranesimas.innerHTML = 'Pagal nurodytus duomenis: <br> Stačiakampio plotas -  ' + area + ' kv.m <br>' + 'Perimetras - ' + perimeter + ' m <br>' + 'Įstrižainė - ' +  diagonal + ' m';
-            };
-        </script>
-    </div>  
+  <footer class="page-footer">
+    <div class="container">
+      <a class="footer-email" href="mailto:donatas.kulvinskas@yandex.ru">donatas.kulvinskas@yandex.ru</a>
+      <a class="footer-phone" href="tel:+79777734648">+7 977 46 48</a>
+    </div>
+  </footer>
 </body>
 
 </html>
