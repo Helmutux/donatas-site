@@ -9,9 +9,9 @@ var kr1 = document.querySelector('.pirma');
 var kr2 = document.querySelector('.antra');
 var kr3 = document.querySelector('.trecia');
 
-let zinia1 = document.querySelector('.ar_tai');
-let zinia2 = document.querySelector('.tr_tipas');
-let zinia3 = document.querySelector('.tr_plotas');
+var zinia1 = document.querySelector('.ar_tai');
+var zinia2 = document.querySelector('.tr_tipas');
+var zinia3 = document.querySelector('.tr_plotas');
 
 
 form.onsubmit = function (evt) {
