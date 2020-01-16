@@ -1,0 +1,25 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background-color: #d8d6ab;
+}
+h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.lentele{
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;  
+    background-color: wheat;
+}
+tr th, tr td {
+    width: auto;
+    height: 50px;
+    border: 1px solid sienna;
+    padding: 5px 20px;
+}
+
+code{
+    font-size: 16px;
+}
