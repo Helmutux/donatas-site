@@ -26,6 +26,6 @@ form.onsubmit = function (evt) {
     
     // console.log(speed);
 
-    cele.innerHTML = speed.toFixed(0);
+    cele.innerHTML = speed.toFixed(1);
 
 }
