@@ -20,21 +20,33 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2>Greičio konvertavimas: <br><br> nuvažiuoti metrai / sugaištos sekundės <br>
+                <h3>Greičio konvertavimas: <br> įveiktas atstumas/ sugaištas laikas <br>
                     <i class="far fa-hand-point-down"></i>
-                    <br> kilometrai / val</h2>
+                    <br> kilometrai / val</h3>
             </div>
             <div class="col-4"></div>
             <form class="uzklausa col-4 text-center">
                 <div class="form-group">
-                    <label for="atstumas">Nuvažiuotas atstumas metrais</label>
-                    <input type="number" class="form-control" id="atstumas" placeholder="įrašykite metrus">
+                    <label for="kilometrai">Atstumas kilometrais</label>
+                    <input type="number" class="form-control" id="kilometrai" placeholder="įrašykite kilometrus">
                 </div>
                 <div class="form-group">
-                    <label for="laikas">Sugaištas laikas sek.</label>
-                    <input type="number" class="form-control" id="laikas" placeholder="įrašykite sek">
+                    <label for="metrai">Atstumas metrais</label>
+                    <input type="number" class="form-control" id="metrai" placeholder="įrašykite metrus">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="hours">Sugaištas laikas val.</label>
+                    <input type="number" class="form-control" id="hours" placeholder="įrašykite val">
+                </div>
+                <div class="form-group">
+                    <label for="minutes">Sugaištas laikas min.</label>
+                    <input type="number" class="form-control" id="minutes" placeholder="įrašykite min">
+                </div>
+                <div class="form-group">
+                    <label for="seconds">Sugaištas laikas sek.</label>
+                    <input type="number" class="form-control" id="seconds" placeholder="įrašykite sek">
+                </div>
+                <button type="submit" class="btn btn-primary">Pateikti greitį</button>
             </form>
             <div class="col-4"></div>
             <div class="col-4"></div>
