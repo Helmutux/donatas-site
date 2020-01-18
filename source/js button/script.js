@@ -5,7 +5,7 @@ var mygtukas;
 var clicks = 0;
 
 function createButton () {
-    if (clicks < 100) {
+    if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 500).toFixed());
         var y = Number(((Math.random()) * 1000).toFixed());
@@ -19,7 +19,7 @@ function createButton () {
 }
 
 function createButton992 () {
-    if (clicks < 100) {
+    if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 400).toFixed());
         var y = Number(((Math.random()) * 800).toFixed());
@@ -33,7 +33,7 @@ function createButton992 () {
 }
 
 function createButton768 () {
-    if (clicks < 100) {
+    if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 350).toFixed());
         var y = Number(((Math.random()) * 600).toFixed());
@@ -47,7 +47,7 @@ function createButton768 () {
 }
 
 function createButton576 () {
-    if (clicks < 100) {
+    if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 300).toFixed());
         var y = Number(((Math.random()) * 450).toFixed());
@@ -61,7 +61,7 @@ function createButton576 () {
 }
 
 function createButton375 () {
-    if (clicks < 100) {
+    if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 220).toFixed());
         var y = Number(((Math.random()) * 280).toFixed());
@@ -75,7 +75,7 @@ function createButton375 () {
 }
 
 function createButton320 () {
-    if (clicks < 100) {
+    if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 150).toFixed());
         var y = Number(((Math.random()) * 200).toFixed());
