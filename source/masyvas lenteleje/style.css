@@ -7,9 +7,10 @@ h1{
     text-align: center;
     margin-top: 40px;
 }
-.lentele{
+table{
     margin: auto;
-    margin-top: 20px;
+    text-align: center;
+    /* margin-top: 20px; */
     border-collapse: collapse;  
     background-color: wheat;
 }

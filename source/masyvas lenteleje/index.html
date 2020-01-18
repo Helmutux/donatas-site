@@ -34,7 +34,7 @@
             kilometrais per valandą.
         </p>
     </header>
-    <div style="width: fit-content;">
+    <main>
         <h1>Transporto lentelė</h1>
         <table class="lentele">
             <thead>
@@ -51,10 +51,10 @@
             </tbody>
 
         </table>
-    </div>
-    <div>
-        <p>Panaudotas javascript kodas:</p>
-        <code><pre>
+
+        <div>
+            <p>Panaudotas javascript kodas:</p>
+            <code><pre>
             /susikuriame masyva, kuriame elementai patys yra masyvai
 var masyvas = [
     ['2018-01-16 09:53:05', 'KSA132', 3230, 165],
@@ -79,7 +79,7 @@ var greitis;
 var table = document.querySelector('table tbody'); 
 
 //paleidziame cikla 'for' noredami is masyvo pasiimti reiksmes
-for (i=0; i < masyvas.length; i++){//duodame komanda "eiti per masyvo elementus "i" kartų, kur "i" ne mažiau nei nulis, bet ne daugiau nei masyvo elementų kiekis
+for (i=0; i &lt; masyvas.length; i++){//duodame komanda "eiti per masyvo elementus "i" kartų, kur "i" ne mažiau nei nulis, bet ne daugiau nei masyvo elementų kiekis
     //kadangi uzduoties salygoje zinome is keliu elementu sudaryti masyvo elementai-masyvai nereikia antrojo 'for' ciklo
     datalaikas = (masyvas[i][0]);//"sukam" cikla "for" pasiimdami is masyvo datos ir laiko reiksmes
     numeris =  (masyvas[i][1]);//"sukam" cikla "for" pasiimdami is masyvo valst.nr reiksmes
@@ -97,11 +97,11 @@ for (i=0; i < masyvas.length; i++){//duodame komanda "eiti per masyvo elementus 
 
     //isvedame rezultatus (istrauktus is masyvo atskirus elementus) i html lentele.
     //greicio isvesciai papildomai pritaikome 'toFixed()' savybe, suapvalinancia rezultata iki sveiko skaiciaus
-    table.innerHTML += '<tr><td>' + datalaikas + '</td><td>' + numeris +  '</td><td>' + atstumas +  '</td><td>'  + laikas + '</td><td>'  + greitis.toFixed(0) + '</td></tr>';
+    table.innerHTML += '&lttr>&lttd>' + datalaikas + '&lt/td>&lttd>' + numeris +  '&lt/td>&lttd>' + atstumas +  '&lt/td>&lttd>'  + laikas + '&lt/td>&lttd>'  + greitis.toFixed(0) + '&lt/td>&lt/tr>';
 
-}
-</pre></code>
-    </div>
+}</pre></code>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body
