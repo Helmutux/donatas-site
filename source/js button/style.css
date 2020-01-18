@@ -49,7 +49,7 @@ button:active{
     display: none;
 }
 
-@media (max-width: 992px){
+@media (-webkit-max-width: 992px){
     h1{
         font-size: 1.8em;
     }
@@ -79,7 +79,7 @@ button:active{
     }
 }
 
-@media (max-width: 768px){
+@media (-webkit-max-width: 768px){
     h1{
         font-size: 1.7em;
     }
@@ -109,7 +109,7 @@ button:active{
     }
 }
 
-@media (max-width: 576px){
+@media (-webkit-max-width: 576px){
     h1{
         font-size: 1.5em;
     }
@@ -138,7 +138,7 @@ button:active{
         display: none;
     }
 }
-@media (max-width: 375px){
+@media (-webkit-max-width: 375px){
     h1{
         font-size: 1.3em;
     }
@@ -167,7 +167,7 @@ button:active{
         display: none;
     }
 }
-@media (max-width: 320px){
+@media (-webkit-max-width: 320px){
     h1{
         font-size: 1em;
     }
