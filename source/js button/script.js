@@ -9,7 +9,7 @@ function createButton () {
         clicks++;
         var x = Number(((Math.random()) * 25).toFixed());
         var y = Number(((Math.random()) * 50).toFixed());
-        mygtukas = '<button  onclick="createButton()" style="top:' + x + 'vw; left:' + y + 'vw;">cloned button</button>';
+        mygtukas = '<button  onclick="createButton()" style="top:' + x + 'vw; left:' + y + 'vw;">Cloned button</button>';
         main.innerHTML += mygtukas;
         console.log(clicks);
     } else {
