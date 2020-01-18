@@ -21,8 +21,8 @@ function createButton () {
 function createButton992 () {
     if (clicks < 30) {
         clicks++;
-        var x = Number(((Math.random()) * 400).toFixed());
-        var y = Number(((Math.random()) * 800).toFixed());
+        var x = Number(((Math.random()) * 500).toFixed());
+        var y = Number(((Math.random()) * 500).toFixed());
         mygtukas = '<button  onclick="createButton992()" style="top:' + x + 'px; left:' + y + 'px;">cloned button</button>';
         main.innerHTML += mygtukas;
 
@@ -36,7 +36,7 @@ function createButton768 () {
     if (clicks < 30) {
         clicks++;
         var x = Number(((Math.random()) * 350).toFixed());
-        var y = Number(((Math.random()) * 600).toFixed());
+        var y = Number(((Math.random()) * 40350).toFixed());
         mygtukas = '<button  onclick="createButton768()" style="top:' + x + 'px; left:' + y + 'px;">cloned button</button>';
         main.innerHTML += mygtukas;
 
@@ -49,8 +49,8 @@ function createButton768 () {
 function createButton576 () {
     if (clicks < 30) {
         clicks++;
-        var x = Number(((Math.random()) * 300).toFixed());
-        var y = Number(((Math.random()) * 450).toFixed());
+        var x = Number(((Math.random()) * 250).toFixed());
+        var y = Number(((Math.random()) * 250).toFixed());
         mygtukas = '<button  onclick="createButton576()" style="top:' + x + 'px; left:' + y + 'px;">cloned button</button>';
         main.innerHTML += mygtukas;
 
@@ -63,8 +63,8 @@ function createButton576 () {
 function createButton375 () {
     if (clicks < 30) {
         clicks++;
-        var x = Number(((Math.random()) * 220).toFixed());
-        var y = Number(((Math.random()) * 280).toFixed());
+        var x = Number(((Math.random()) * 170).toFixed());
+        var y = Number(((Math.random()) * 170).toFixed());
         mygtukas = '<button  onclick="createButton375()" style="top:' + x + 'px; left:' + y + 'px;">cloned button</button>';
         main.innerHTML += mygtukas;
 
@@ -77,8 +77,8 @@ function createButton375 () {
 function createButton320 () {
     if (clicks < 30) {
         clicks++;
-        var x = Number(((Math.random()) * 150).toFixed());
-        var y = Number(((Math.random()) * 200).toFixed());
+        var x = Number(((Math.random()) * 120).toFixed());
+        var y = Number(((Math.random()) * 120).toFixed());
         mygtukas = '<button  onclick="createButton320()" style="top:' + x + 'px; left:' + y + 'px;">cloned button</button>';
         main.innerHTML += mygtukas;
 
