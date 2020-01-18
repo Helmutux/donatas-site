@@ -89,6 +89,9 @@ button:active {
   #r320 {
     display: none;
   }
+  button {
+    padding: 1.5vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -99,7 +102,7 @@ button:active {
     font-size: 0.8em;
   }
   main {
-    width: 700px;
+    width: 680px;
   }
   #r1200 {
     display: none;
@@ -118,6 +121,9 @@ button:active {
   }
   #r320 {
     display: none;
+  }
+  button {
+    padding: 2vw;
   }
 }
 
@@ -129,7 +135,7 @@ button:active {
     font-size: 0.7em;
   }
   main {
-    width: 500px;
+    width: 490px;
   }
   #r1200 {
     display: none;
@@ -148,6 +154,9 @@ button:active {
   }
   #r320 {
     display: none;
+  }
+  button {
+    padding: 2.5vw;
   }
 }
 
@@ -159,7 +168,7 @@ button:active {
     font-size: 0.6em;
   }
   main {
-    width: 320px;
+    width: 300px;
   }
   #r1200 {
     display: none;
@@ -178,6 +187,9 @@ button:active {
   }
   #r320 {
     display: none;
+  }
+  button {
+    padding: 3vw;
   }
 }
 
@@ -189,7 +201,7 @@ button:active {
     font-size: 0.5em;
   }
   main {
-    width: 280px;
+    width: 270px;
   }
   #r1200 {
     display: none;
@@ -208,6 +220,9 @@ button:active {
   }
   #r320 {
     display: block;
+  }
+  button {
+    padding: 4vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -77,6 +77,9 @@ button:active{
     #r320{
         display: none;
     }
+    button{
+        padding: 1.5vw; 
+    }
 }
 
 @media (max-width: 768px){
@@ -106,6 +109,9 @@ button:active{
     }
     #r320{
         display: none;
+    }
+    button{
+        padding: 2vw; 
     }
 }
 
@@ -137,6 +143,9 @@ button:active{
     #r320{
         display: none;
     }
+    button{
+        padding: 2.5vw; 
+    }
 }
 @media (max-width: 375px){
     h1{
@@ -166,6 +175,9 @@ button:active{
     #r320{
         display: none;
     }
+    button{
+        padding: 3vw; 
+    }
 }
 @media (max-width: 320px){
     h1{
@@ -194,5 +206,8 @@ button:active{
     }
     #r320{
         display: block;
+    }
+    button{
+        padding: 4vw; 
     }
 }
