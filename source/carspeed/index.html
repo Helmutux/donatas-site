@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/17e3549c29.js" crossorigin="anonymous"></script>
     <title>Automobilio greičio konverteris</title>
 </head>
 
@@ -17,21 +19,13 @@
     <a href="../../index.html">Grįžti į pradinį</a>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2>Automobilio duomenų ir greičio atvaizdavimas lentelėje</h2>
+            <div class="col-12 text-center">
+                <h2>Greičio konvertavimas: <br><br> nuvažiuoti metrai / sugaištos sekundės <br>
+                    <i class="far fa-hand-point-down"></i>
+                    <br> kilometrai / val</h2>
             </div>
-            <div class="col-12">
-                <h4>Masyvo formavimas:</h4>
-            </div>
-            <form class="uzklausa col-4 text-left">
-                <div class="form-group">
-                    <label for="datalaikas">Data, laikas</label>
-                    <input type="datetime" class="form-control" id="datalaikas" value="2017-07-06 19:59:45">
-                </div>
-                <div class="form-group">
-                    <label for="numeris">Valst.numeris</label>
-                    <input type="text" class="form-control" id="numeris" value="LRS123">
-                </div>
+            <div class="col-4"></div>
+            <form class="uzklausa col-4 text-center">
                 <div class="form-group">
                     <label for="atstumas">Nuvažiuotas atstumas metrais</label>
                     <input type="number" class="form-control" id="atstumas" value="5000">
@@ -42,25 +36,23 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <div class="col-12">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">Data Laikas</th>
-                            <th scope="col">Automobilio Nr.</th>
-                            <th scope="col">Greitis km / h</th>
-                            
+                            <th>Greitis km / h</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" class="data_laikas">-</th>
-                            <td class="v_nr">-</td>
                             <td class="greitis">-</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <div class="col-4"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

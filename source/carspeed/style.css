@@ -6,7 +6,7 @@
   background-color: #cdbc93;
 }
 
-.container h2, .container h4 {
+.container h2 {
   padding: 10px;
   text-align: center;
 }
@@ -16,8 +16,12 @@
   padding-bottom: 20px;
 }
 
-.data_laikas, .v_nr, .greitis {
+.greitis {
   font-size: 26px;
   font-weight: 700;
+}
+
+table {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 .container{
     margin-top: 40px;
-    h2, h4{
+    h2{
         padding: 10px;
         text-align: center;
     }
@@ -11,7 +11,10 @@
     margin: auto;
     padding-bottom: 20px;
 }
-.data_laikas, .v_nr, .greitis{
+.greitis{
     font-size: 26px;
     font-weight: 700;
+}
+table{
+    margin: auto;
 }
