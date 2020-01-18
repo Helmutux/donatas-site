@@ -30,24 +30,10 @@ button{
     color: oldlace;
     background-color: #006280;
 }
+
 button:active{
     transform: scale(0.97); 
 }
-// #r992{
-//     display: none;
-// }
-// #r768{
-//     display: none;
-// }
-// #r576{
-//     display: none;
-// }
-// #r375{
-//     display: none;
-// }
-// #r320{
-//     display: none;
-// }
 
 @media (max-width: 992px){
     h1{
@@ -58,25 +44,8 @@ button:active{
     }
     main {
         width: 850px;
+        height: auto;
     }
-    // #r1200{
-    //     display: none;
-    // }
-    // #r992{
-    //     display: block;
-    // }
-    // #r768{
-    //     display: none;
-    // }
-    // #r576{
-    //     display: none;
-    // }
-    // #r375{
-    //     display: none;
-    // }
-    // #r320{
-    //     display: none;
-    // }
     button{
         padding: 1.5vw; 
     }
@@ -91,25 +60,8 @@ button:active{
     }
     main {
         width: 680px;
+        height: auto;
     }
-    // #r1200{
-    //     display: none;
-    // }
-    // #r992{
-    //     display: none;
-    // }
-    // #r768{
-    //     display: block;
-    // }
-    // #r576{
-    //     display: none;
-    // }
-    // #r375{
-    //     display: none;
-    // }
-    // #r320{
-    //     display: none;
-    // }
     button{
         padding: 2vw; 
     }
@@ -124,25 +76,8 @@ button:active{
     }
     main {
         width: 490px;
-    // }
-    // #r1200{
-    //     display: none;
-    // }
-    // #r992{
-    //     display: none;
-    // }
-    // #r768{
-    //     display: none;
-    // }
-    // #r576{
-    //     display: block;
-    // }
-    // #r375{
-    //     display: none;
-    // }
-    // #r320{
-    //     display: none;
-    // }
+        height: auto;
+    }
     button{
         padding: 2.5vw; 
     }
@@ -156,25 +91,8 @@ button:active{
     }
     main {
         width: 300px;
-    // }
-    // #r1200{
-    //     display: none;
-    // }
-    // #r992{
-    //     display: none;
-    // }
-    // #r768{
-    //     display: none;
-    // }
-    // #r576{
-    //     display: none;
-    // }
-    // #r375{
-    //     display: block;
-    // }
-    // #r320{
-    //     display: none;
-    // }
+        height: auto;
+        }
     button{
         padding: 3vw; 
     }
@@ -188,25 +106,8 @@ button:active{
     }
     main {
         width: 270px;
-    // }
-    // #r1200{
-    //     display: none;
-    // }
-    // #r992{
-    //     display: none;
-    // }
-    // #r768{
-    //     display: none;
-    // }
-    // #r576{
-    //     display: none;
-    // }
-    // #r375{
-    //     display: none;
-    // }
-    // #r320{
-    //     display: block;
-    // }
+        height: auto;
+    }
     button{
         padding: 4vw; 
     }
