@@ -80,6 +80,9 @@ form.onsubmit = function (evt) {
             }
         }
     }
+document.getElementById('Number1').value = "";
+document.getElementById('Number2').value = "";
+document.getElementById('Number3').value = "";
 }
 
 
