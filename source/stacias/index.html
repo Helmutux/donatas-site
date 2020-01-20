@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../icons/icon-rectangle.png">
     <title>Ploto, Perimetro ir Istrizaines skaiciavimas</title>
 </head>
 
@@ -46,112 +47,127 @@
             background-color: #f2f2f2;
             padding: 20px;
         }
-        body{
+
+        body {
             background-color: wheat;
         }
-        .isvestis{
+
+        .isvestis {
             font-size: 24px;
             display: block;
             padding-left: 30px;
-            
-            
+
+
         }
-        .uzklausa{
+
+        .uzklausa {
             padding: 10px;
         }
-        form input{
+
+        form input {
             padding: 10px;
             font-size: 16px;
             color: grey;
             font-style: italic;
         }
-        form label{
+
+        form label {
             font-size: 22px;
             margin: 10px;
         }
+
         @media (max-width: 768px) {
-        input[type=number],
-        select {
-            width: 50%;
-            padding: 6px 10px;
-            margin: 5px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
-        }
 
-        input[type=submit] {
-            width: 60%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 7px 10px;
-            margin: 4px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 18px;
-            font-stretch: wider;
-            font-style: normal;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 400;
-        }
+            input[type=number],
+            select {
+                width: 50%;
+                padding: 6px 10px;
+                margin: 5px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+            }
 
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
+            input[type=submit] {
+                width: 60%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 7px 10px;
+                margin: 4px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 18px;
+                font-stretch: wider;
+                font-style: normal;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 400;
+            }
 
-        div {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 10px;
-        }
-        body{
-            background-color: wheat;
-        }
-        .isvestis{
-            font-size: 18px;
-            display: block;
-            padding-left: 10px;
-            
-            
-        }
-        .uzklausa{
-            padding: 5px;
-        }
-        form input{
-            padding: 5px;
-            font-size: 12px;
-            color: black;
-            font-style: italic;
-        }
-        form label{
-            font-size: 16px;
-            margin: 5px;
-        }
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+
+            body {
+                background-color: wheat;
+            }
+
+            .isvestis {
+                font-size: 18px;
+                display: block;
+                padding-left: 10px;
+
+
+            }
+
+            .uzklausa {
+                padding: 5px;
+            }
+
+            form input {
+                padding: 5px;
+                font-size: 12px;
+                color: black;
+                font-style: italic;
+            }
+
+            form label {
+                font-size: 16px;
+                margin: 5px;
+            }
         }
     </style>
 
-	<a href="../../index.html#staciass">Grįžti į pradinį</a>
+    <a href="../../index.html#staciass">Grįžti į pradinį</a>
 
     <div style="max-width: 70vw; margin: 50px auto;">
         <div>
             <form action="" class="uzklausa">
                 <label for="ilgis">Stačiakampio ilgis metrais</label>
-                <input type="number" id="ilgis" name="Ilgis" placeholder="Nurodykite ilgį" min="0" step="0.01" class="ilgioduomenys">
+                <input type="number" id="ilgis" name="Ilgis" placeholder="Nurodykite ilgį" min="0" step="0.01"
+                    class="ilgioduomenys">
 
                 <label for="aukstis">Stačiakampio aukštis metrais</label>
-                <input type="number" id="aukstis" name="Aukstis" placeholder="Nurodykite aukštį" min="0" step="0.01" class="aukscioduomenys">
+                <input type="number" id="aukstis" name="Aukstis" placeholder="Nurodykite aukštį" min="0" step="0.01"
+                    class="aukscioduomenys">
 
                 <input type="submit" value="Apskaičiuoti">
             </form>
         </div>
         <div class="isvestis">
-            <p>Norėdami gauti stačiakampio plotą, perimetrą ir įstrižainę suveskite duomenis ir paspauskite viršuje esantį mygtuką.</p>
+            <p>Norėdami gauti stačiakampio plotą, perimetrą ir įstrižainę suveskite duomenis ir paspauskite viršuje
+                esantį mygtuką.</p>
         </div>
 
         <script>
-            
+
             var form = document.querySelector('.uzklausa');
             var hight;
             var width;
@@ -162,9 +178,9 @@
             var ilgis = document.querySelector('.ilgioduomenys');
             var aukstis = document.querySelector('.aukscioduomenys');
             var pranesimas = document.querySelector('p');
-            
-            
-            form.onsubmit = function(evt) {
+
+
+            form.onsubmit = function (evt) {
                 // instrukcija atsaukia duomenu issiuntima
                 evt.preventDefault();
                 hight = ilgis.value;
@@ -180,10 +196,14 @@
 
                 diagonal = Math.sqrt(Math.pow(hight, 2) + Math.pow(width, 2));
                 diagonal = diagonal.toFixed(2);
-                pranesimas.innerHTML = 'Pagal nurodytus duomenis: <br> Stačiakampio plotas -  ' + area + ' kv.m <br>' + 'Perimetras - ' + perimeter + ' m <br>' + 'Įstrižainė - ' +  diagonal + ' m';
+                pranesimas.innerHTML = 'Pagal nurodytus duomenis: <br> Stačiakampio plotas -  ' + area + ' kv.m <br>' + 'Perimetras - ' + perimeter + ' m <br>' + 'Įstrižainė - ' + diagonal + ' m';
+
+
+                document.getElementById('ilgis').value = "";
+                document.getElementById('aukstis').value = "";
             };
         </script>
-    </div>  
+    </div>
 </body>
 
 </html>
