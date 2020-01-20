@@ -11,12 +11,20 @@ form.onsubmit = function (evt) {
     evt.preventDefault();
 
     kilometrai = Number(document.getElementById('kilometrai').value);
+    document.getElementById('kilometrai').value = "";
     metrai = Number(document.getElementById('metrai').value);
+    document.getElementById('metrai').value = "";
     valandos = Number(document.getElementById('hours').value);
+    document.getElementById('hours').value = "";
     minutes = Number(document.getElementById('minutes').value);
+    document.getElementById('minutes').value = "";
     sekundes = Number(document.getElementById('seconds').value);
+    document.getElementById('seconds').value = "";
+    
     var atstumas = kilometrai * 1000 + metrai;
     var laikas = valandos * 3600 + minutes * 60 + sekundes;
+
+    
     
     // console.log(atstumas);
     // console.log(laikas);
