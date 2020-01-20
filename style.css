@@ -16,6 +16,10 @@ body {
   margin: 0 auto;
   padding: 0 16px;
 }
+#stogas a{
+  padding-top: 50px;
+  padding-right: 60px;
+}
 
 .page-header {
   margin: 0 0 180px;
@@ -182,6 +186,9 @@ body {
   background-position: left;
 }
 
+.footer-fb {
+  padding-left: 30px;
+}
 .footer-email {
   padding-left: 30px;
   background-image: url("img/icon-email.svg");
