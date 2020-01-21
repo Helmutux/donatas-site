@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/17e3549c29.js" crossorigin="anonymous"></script>
+    <title>Input forma. Masyvo formavimas. Lenteles pildymas</title>
+</head>
+
+<body>
+    <!-- pusapio virsus -->
+    <header class="container-flex">
+        <h1 class="text-center">
+            Duomenų gavimas iš įvesties formos. <br>
+            Masyvo formavimas. <br>
+            Suvedimas į lentelę
+        </h1>
+    </header>
+
+    <!-- pagrindinis puslapio laukas -->
+    <main>
+        <div class="container">
+            <h3>Įsigijimų registras</h3>
+
+            <!-- ivesties foemu blokas -->
+            <form class="col-lg-4 col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="Data">Įsigijimo data</label>
+                    <input type="date" class="form-control" id="Data" placeholder="įveskite datą">
+                </div>
+
+                <div class="form-group">
+                    <label for="Islaidos">Išlaidų grupė</label>
+                    <select class="form-control" id="Islaidos">
+                        <option value="pasirinkite išlaidų grupę" selected disabled><i>pasirinkite išlaidų grupę</i></option>
+                        <option value="Statybinės medžiagos">Statybinės medžiagos</option>
+                        <option value="Įrankiai">Įrankiai</option>
+                        <option value="Įrangos nuoma">Įrangos nuoma</option>
+                        <option value="Outsorsingo paslaugos">Outsorsingo paslaugos</option>
+                        <option value="Kitos išlaidos">Kitos išlaidos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Tiekejas">Tiekėjas</label>
+                    <select class="form-control" id="Tiekejas" aria-placeholder="nurodykite tiekėją">
+                        <option value="nurodykite tiekėją" selected disabled>nurodykite tiekėją</option>
+                        <option value="UAB Statybos aikštė">UAB Statybos aikštė</option>
+                        <option value="UAB Kauno remontininkas">UAB Kauno remontininkas</option>
+                        <option value="UAB Remstor">UAB Remstor</option>
+                        <option value="UAB Granitas">UAB Granitas</option>
+                        <option value="AB Revizorius">AB Revizorius</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Suma">Išlaidų suma</label>
+                    <input type="number" class="form-control" id="Suma" placeholder="nurodykite sumą">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Suvesti duomenis</button>
+            </form>
+        </div>
+
+        <!-- lentele, kaupianti duomenis -->
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Įsigijimo data</th>
+                    <th scope="col">Išlaidų grupė</th>
+                    <th scope="col">Tiekėjas</th>
+                    <th scope="col">Išlaidų suma</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                
+                <tr>
+                    <th colspan="4" class="sumarum">TOTAL</th>
+                    <td  id="Total"><b></b></td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+
+
+
+    </main>
+    <footer class="container-flex">
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.facebook.com/kulvinskas"><i class="fab fa-facebook-square">
+                        kulvinskas</i></a></li>
+            <li class="list-group-item"><a href="donatas.kulvinskas@gmail.com">donatas.kulvinskas@gmail.com</a></li>
+            <li class="list-group-item">All rights reserved &copy;</li>
+            <li class="list-group-item">2020-01-21</li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
