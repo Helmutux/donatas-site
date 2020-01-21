@@ -7,6 +7,12 @@ body {
   color: whitesmoke;
 }
 
+.container-flex .link {
+  font-size: 12px;
+  color: whitesmoke;
+  margin-left: 1em;
+}
+
 .container-flex h1 {
   padding: 1em 0;
 }

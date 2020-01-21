@@ -4,6 +4,11 @@ body{
 .container-flex{
     background-color: rgb(51, 96, 133);
     color: whitesmoke;
+    .link{
+        font-size: 12px;
+        color: whitesmoke;    
+        margin-left: 1em;
+    }
     h1{
         padding: 1em 0;
     }
