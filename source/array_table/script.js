@@ -12,7 +12,7 @@ var suma;
 var totale = 0;
 var total = document.querySelector('#Total');
 
-//susikuriame kintamaji 'tbody'. Ji naudosim siusdami gautas reiksmes i html dokumenta atvaizdavimui 
+
 
 
 //apsirasome kas bus aktyvavus formos submit 
