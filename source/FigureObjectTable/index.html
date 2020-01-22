@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../icons/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../icons/icon-object.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -50,20 +50,36 @@
                 </form>
             </div>
         </div>
-        <table class="table">
-            <thead class="thead-light">
-              <tr>
-                <th scope="col" class="topleft">#</th>
-                <th scope="col">ILGIS</th>
-                <th scope="col">AUKŠTIS</th>
-                <th scope="col" class="topright">PLOTIS</th>
-              </tr>
-            </thead>
-            <tbody id="tablebody">
+       
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col" class="topleft">#</th>
+                        <th scope="col">ILGIS</th>
+                        <th scope="col">AUKŠTIS</th>
+                        <th scope="col" class="topright">PLOTIS</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
 
-            </tbody>
-          </table>
+                </tbody>
+            </table>
+            <div class="row">
+            <button type="button" class="btn btn-primary" onclick="maxima()" id="max">Apskaičiuoti tūrį ir rasti
+                            max</button>
+            </div>
+            <table class="table text-center">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col" class="topleft">#</th>
+                        <th scope="col" class="topright">TŪRIS</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebodyMax">
 
+                </tbody>
+            </table>
+        
 
 
     </main>
