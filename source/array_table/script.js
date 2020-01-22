@@ -40,7 +40,7 @@ form.onsubmit = function(evt) {
 
     //gautus masyvus keliame i bendra masyva - kaupiame visus suvestus duomenis
     megaduomenys.push(duomenys);
-    }
+    
 
 //toliau gautais duomenimis pildysime lentele
 //paleidziame cikla 'for' noredami is masyvo pasiimti reiksmes
@@ -91,5 +91,5 @@ form.onsubmit = function(evt) {
 
     // isitikiname, kad visi suvesti duomenys (masyvai) issaugoti-sukaupti bendrame masyve 
     console.log(megaduomenys);
-
+    }
 }
