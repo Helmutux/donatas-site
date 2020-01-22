@@ -5,6 +5,7 @@ var objektai = new Array();//masyvas. cia susikelsime objektus t.y. visu figuru 
 var form = document.querySelector('form');
 var volume;
 var volumeArray = [];
+var maxi=0;
 
 form.onsubmit = function (evt) {
     // instrukcija atsaukia duomenu issiuntima
@@ -35,12 +36,25 @@ form.onsubmit = function (evt) {
             var length = objektai[i].ilgis;
             var heigth = objektai[i].aukstis;
             var width = objektai[i].plotis;
-            
+
             volume = length * heigth * width;
         }
         volumeArray.push(volume);
-        // console.log('turis', volume);
+
         
+        var min = volumeArray[0];
+            maxi = min;
+        for (i = 1; i < volumeArray.length; ++i) {
+            if (volumeArray[i] > maxi) {
+                maxi = volumeArray[i];
+            }
+            if (volumeArray[i] < min) {
+                min = volumeArray[i];
+            }
+        }
+        console.log('maksimali reiksme', maxi);
+        // console.log('turis', volume);
+
         //gautai duomenimis pildome lenteles eilute
         var tbody = document.getElementById('tablebody');
 
@@ -68,39 +82,40 @@ form.onsubmit = function (evt) {
         td.appendChild(txt);
     }
 }
-// console.log('masyvas', volumeArray);
-// console.log(objektai);
+console.log('masyvas', volumeArray);
+
 
 
 var maxButton = document.querySelector('#max');
 
-function maxima() {
-    // let emptyArray = [];
-    // let nonExistantArray = undefined; 
-    // if((objektai.isArray(emptyArray)) || (objektai.isArray(nonExistantArray))){
-    //     alert('Norėdami palyginti, suveskite keletą figūrų duomenų');
-    // } else {
+
+function big() {
+    
+
     for (i = 0; i < volumeArray.length; i++) {
         var vol = volumeArray[i];
-    
-    
-    // var volume = length * heigth * width;
-    //gautai duomenimis pildome lenteles eilute
-    var tbody = document.getElementById('tablebodyMax');
 
-    var tr = document.createElement('tr');
-    tbody.appendChild(tr);
+        //gautai duomenimis pildome lenteles eilute
+        
+        var tbody = document.getElementById('tablebodyMax');
 
-    var td = document.createElement('td');
-    tr.appendChild(td);
-    var txt = document.createTextNode(i);
-    td.appendChild(txt);
+        var tr = document.createElement('tr');
+        tbody.appendChild(tr);
 
-    var td = document.createElement('td');
-    tr.appendChild(td);
-    var txt = document.createTextNode(vol);
-    td.appendChild(txt);
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        var txt = document.createTextNode(i);
+        td.appendChild(txt);
 
-}
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        var txt = document.createTextNode(vol);
+        td.appendChild(txt);
 
+        if (vol === maxi){
+                tbody = document.getElementById('tablebodyMax');
+                tbody.innerHTML = '<tr style="color: white; background: #4167B2"><td>' + (i) + '</td><td>' + vol + '</td></tr>';
+        }
+
+    }
 }
