@@ -88,4 +88,21 @@ header a {
   font-size: 12px;
   margin-left: 2em;
 }
+
+footer {
+  border-top: 3px solid #4167B2;
+  color: #4167B2;
+  font-size: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(192, 199, 209, 0.75);
+}
+
+footer .list-group-item {
+  color: #4167B2;
+  font-size: 12px;
+  margin-left: 2em;
+  background-color: rgba(192, 199, 209, 0);
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
