@@ -5,7 +5,7 @@ var objektai = new Array();//masyvas. cia susikelsime objektus t.y. visu figuru 
 var form = document.querySelector('form');
 var volume;
 var volumeArray = [];
-var maxi=0;
+var maxi = 0;
 
 form.onsubmit = function (evt) {
     // instrukcija atsaukia duomenu issiuntima
@@ -41,11 +41,11 @@ form.onsubmit = function (evt) {
         }
         volumeArray.push(volume);
 
-        
+
         var min = volumeArray[0];
-            maxi = min;
+        maxi = min;
         for (i = 1; i < volumeArray.length; ++i) {
-            if (volumeArray[i] > maxi) {
+            if (volumeArray[i] >= maxi) {
                 maxi = volumeArray[i];
             }
             if (volumeArray[i] < min) {
@@ -90,35 +90,47 @@ var maxButton = document.querySelector('#max');
 
 
 function big() {
-    
+
 
     for (i = 0; i < volumeArray.length; i++) {
         var vol = volumeArray[i];
 
         //gautai duomenimis pildome lenteles eilute
-        
+
         var tbody = document.getElementById('tablebodyMax');
+        
+        var b = i + 1;
+        var tr = document.createElement('tr');
+        tbody.appendChild(tr);
 
-//         var tr = document.createElement('tr');
-//         tbody.appendChild(tr);
-
-//         var td = document.createElement('td');
-//         tr.appendChild(td);
-//         var txt = document.createTextNode(i);
-//         td.appendChild(txt);
-
-//         var td = document.createElement('td');
-//         tr.appendChild(td);
-//         var txt = document.createTextNode(vol);
-//         td.appendChild(txt);
-        if (vol !== maxi){
-//                 tbody = document.getElementById('tablebodyMax');
-                tbody.innerHTML = '<tr><td>' + i + '</td><td>' + vol + '</td></tr>';
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        var txt = document.createTextNode(b);
+        if(vol===maxi){
+            td.classList.add('maxim');
         }
-        if (vol === maxi){
-//                 tbody = document.getElementById('tablebodyMax');
-                tbody.innerHTML = '<tr style="color: white; background: #4167B2"><td>' + (i + 1) + '</td><td>' + vol + '</td></tr>';
+        td.appendChild(txt);
+
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        var txt = document.createTextNode(vol);
+        if(vol===maxi){
+            td.classList.add('maxim');
         }
+        td.appendChild(txt);
+
+
 
     }
-}
+    console.log('maksimali reiksme', maxi);
+    
+        // var eclass = document.getElementById('tablebodyMax');
+       
+        console.log('tablebodyMax');
+
+        // for (i = 0; i < volumeArray.length; i++) {
+        // if (vol === maxi) {
+            // eclass.classList.add('maxim');
+        // }
+    }
+

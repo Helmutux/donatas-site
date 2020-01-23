@@ -11,7 +11,7 @@ body{
     main{
         .btn-primary{
             background-color: #4167B2;
-            border-color:#4167B2;
+            border-color:rgb(65, 103, 178);
             outline: none;
             margin: auto;
         }
@@ -25,9 +25,13 @@ body{
             background-color: rgba(192, 199, 209, 0.75);
             box-shadow: 2px 2px 10px 2px grey;
             color: #4167B2;
-          
-          
-
+        }
+        .maxim{
+            background-color: rgba(65, 103, 178, 0.5);
+            color: white;
+        }
+        #max{
+            margin-top: 1em;
         }
         form{
             padding-bottom: 2em; 
