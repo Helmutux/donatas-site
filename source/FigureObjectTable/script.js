@@ -113,11 +113,11 @@ function big() {
 //         td.appendChild(txt);
         if (vol !== maxi){
                 tbody = document.getElementById('tablebodyMax');
-                tbody.innerHTML = '<tr><td>' + (i) + '</td><td>' + vol + '</td></tr>';
+                tbody.innerHTML = '<tr><td>' + i + '</td><td>' + vol + '</td></tr>';
         }
         if (vol === maxi){
                 tbody = document.getElementById('tablebodyMax');
-                tbody.innerHTML = '<tr style="color: white; background: #4167B2"><td>' + (i) + '</td><td>' + vol + '</td></tr>';
+                tbody.innerHTML = '<tr style="color: white; background: #4167B2"><td>' + (i + 1) + '</td><td>' + vol + '</td></tr>';
         }
 
     }
