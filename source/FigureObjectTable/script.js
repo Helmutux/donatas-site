@@ -99,19 +99,22 @@ function big() {
         
         var tbody = document.getElementById('tablebodyMax');
 
-        var tr = document.createElement('tr');
-        tbody.appendChild(tr);
+//         var tr = document.createElement('tr');
+//         tbody.appendChild(tr);
 
-        var td = document.createElement('td');
-        tr.appendChild(td);
-        var txt = document.createTextNode(i);
-        td.appendChild(txt);
+//         var td = document.createElement('td');
+//         tr.appendChild(td);
+//         var txt = document.createTextNode(i);
+//         td.appendChild(txt);
 
-        var td = document.createElement('td');
-        tr.appendChild(td);
-        var txt = document.createTextNode(vol);
-        td.appendChild(txt);
-
+//         var td = document.createElement('td');
+//         tr.appendChild(td);
+//         var txt = document.createTextNode(vol);
+//         td.appendChild(txt);
+        if (vol !== maxi){
+                tbody = document.getElementById('tablebodyMax');
+                tbody.innerHTML = '<tr><td>' + (i) + '</td><td>' + vol + '</td></tr>';
+        }
         if (vol === maxi){
                 tbody = document.getElementById('tablebodyMax');
                 tbody.innerHTML = '<tr style="color: white; background: #4167B2"><td>' + (i) + '</td><td>' + vol + '</td></tr>';
