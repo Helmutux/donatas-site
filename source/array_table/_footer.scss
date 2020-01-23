@@ -1,0 +1,14 @@
+footer{
+    border-top: 3px solid #4167B2;
+    color: #4167B2;
+    font-size: 12px;
+    flex-wrap: wrap;
+    background-color: rgba(192, 199, 209, 0.75);
+    .list-group-item{
+        color: #4167B2;
+        font-size: 12px;
+        margin-left: 2em;
+        background-color: rgba(192, 199, 209, 0);
+        border: none;
+    }
+}
