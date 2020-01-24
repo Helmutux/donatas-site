@@ -5,82 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../icons/icon-object.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/17e3549c29.js" crossorigin="anonymous"></script>
-    <title>Figūros. Objektai. Maksimumai</title>
+    <title>Input forma. Masyvo formavimas. Lenteles pildymas</title>
 </head>
 
 <body>
+    <!-- pusapio virsus -->
     <header class="container-flex">
-        <div class="row">
-            <div class="col-lg-3 col-md-2 col-sm-12"><a href="../../index.html#fom">Grįžti pradžią</a></div>
-            <div class="col-lg-6 col-md-8 col-sm-12">
-                <h1>Figūros. <br>
-                    Objektai. <br>
-                    Maksimumai
-                </h1>
-            </div>
-            <div class="col-lg-3 col-md-2 col-sm-0">
-            </div>
-        </div>
+    	<a href="../../index.html#InputArrayTable" class="link">Grįžti į pagrindinį</a>
+
+        <h1 class="text-center">
+            Duomenų gavimas iš įvesties formos. <br>
+            Masyvo formavimas. <br>
+            Suvedimas į lentelę
+        </h1>
     </header>
 
-    <main class="container">
-        <div class="container uzklausa">
-            <h3 class="col-12 text-center">Parametrų suteikimas</h3>
-            <div class="row">
-                <div class="col-lg-4"></div>
-                <form class="col-lg-4">
-                    <div class="form-group">
-                        <label for="ilgis">Ilgis</label>
-                        <input type="number" class="form-control" min="0" id="ilgis" placeholder="nurodykite ilgį">
-                    </div>
-                    <div class="form-group">
-                        <label for="aukstis">Aukštis</label>
-                        <input type="number" class="form-control" min="0" id="aukstis" placeholder="nurodykite aukštį">
-                    </div>
-                    <div class="form-group">
-                        <label for="plotis">Plotis</label>
-                        <input type="number" class="form-control" min="0" id="plotis" placeholder="nurodykite plotį">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Pradiniai duomenys</button>
-                </form>
-            </div>
+    <!-- pagrindinis puslapio laukas -->
+    <main>
+    	    <div class="container">
+            <h3>Įsigijimų registras</h3>
+
+            <!-- ivesties foemu blokas -->
+            <form class="col-lg-4 col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="Data">Įsigijimo data</label>
+                    <input type="date" class="form-control" id="Data" placeholder="įveskite datą">
+                </div>
+
+                <div class="form-group">
+                    <label for="Islaidos">Išlaidų grupė</label>
+                    <select class="form-control" id="Islaidos">
+                        <option value="pasirinkite išlaidų grupę" selected disabled><i>pasirinkite išlaidų grupę</i></option>
+                        <option value="Statybinės medžiagos">Statybinės medžiagos</option>
+                        <option value="Įrankiai">Įrankiai</option>
+                        <option value="Įrangos nuoma">Įrangos nuoma</option>
+                        <option value="Outsorsingo paslaugos">Outsorsingo paslaugos</option>
+                        <option value="Kitos išlaidos">Kitos išlaidos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Tiekejas">Tiekėjas</label>
+                    <select class="form-control" id="Tiekejas" aria-placeholder="nurodykite tiekėją">
+                        <option value="nurodykite tiekėją" selected disabled>nurodykite tiekėją</option>
+                        <option value="UAB Statybos aikštė">UAB Statybos aikštė</option>
+                        <option value="UAB Kauno remontininkas">UAB Kauno remontininkas</option>
+                        <option value="UAB Remstor">UAB Remstor</option>
+                        <option value="UAB Granitas">UAB Granitas</option>
+                        <option value="AB Revizorius">AB Revizorius</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Suma">Išlaidų suma</label>
+                    <input type="number" class="form-control" id="Suma" min="0" placeholder="nurodykite sumą">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Suvesti duomenis</button>
+            </form>
         </div>
-       
-            <table class="table">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col" class="topleft">#</th>
-                        <th scope="col">ILGIS</th>
-                        <th scope="col">AUKŠTIS</th>
-                        <th scope="col" class="topright">PLOTIS</th>
-                    </tr>
-                </thead>
-                <tbody id="tablebody">
 
-                </tbody>
-            </table>
-            <div class="row">
-            <button type="button" class="btn btn-primary" onclick="big()" id="max">Apskaičiuoti tūrį ir rasti
-                            max</button>
-            </div>
-            <table class="table text-center">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col" class="topleft">#</th>
-                        <th scope="col" class="topright">TŪRIS</th>
-                    </tr>
-                </thead>
-                <tbody id="tablebodyMax">
+        <!-- lentele, kaupianti duomenis -->
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Įsigijimo data</th>
+                    <th scope="col">Išlaidų grupė</th>
+                    <th scope="col">Tiekėjas</th>
+                    <th scope="col">Išlaidų suma</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                
+                <tr>
+                    <th colspan="4" class="sumarum">TOTAL</th>
+                    <td  id="Total"><b></b></td>
+                </tr>
+            </tbody>
+        </table>
 
-                </tbody>
-            </table>
         
+
+
 
 
     </main>
@@ -88,9 +101,8 @@
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item"><a href="https://www.facebook.com/kulvinskas"><i class="fab fa-facebook-square">
                         kulvinskas</i></a></li>
-            
             <li class="list-group-item">&copy; Platinimas ir kopijavimas neribojamas</li>
-            <li class="list-group-item">2020-01-23</li>
+            <li class="list-group-item">2020-01-21</li>
         </ul>
     </footer>
 
