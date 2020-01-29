@@ -1,0 +1,85 @@
+body {
+  background-image: url(Ferrari_Retro.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+body a {
+  background-color: rgba(183, 189, 189, 0.3);
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 1em;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.616);
+}
+
+body .container {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container form {
+  background-color: rgba(183, 189, 189, 0.3);
+  padding: 0.5em;
+  border-radius: 5px;
+  margin: auto;
+}
+
+body .container form input {
+  padding: 0.7em;
+  margin: 0.5em 0.5em 0.75em;
+  border-radius: 5px;
+  outline: none;
+}
+
+body .container form button {
+  font-size: 16px;
+  padding: 0.7em;
+  border-radius: 5px;
+  outline: none;
+  background: #e50c15;
+  color: whitesmoke;
+  border: 1px solid #db4348;
+}
+
+body .container form button:active {
+  outline: none;
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+body table {
+  background-color: rgba(183, 189, 189, 0.5);
+  margin: auto;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+body table thead td {
+  text-align: center;
+  width: 11.5em;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+body table tbody td {
+  text-align: left;
+  padding-left: 3em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+body .select {
+  background-color: rgba(93, 95, 95, 0.5);
+  color: whitesmoke;
+}
+/*# sourceMappingURL=style.css.map */
