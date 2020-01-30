@@ -5,14 +5,17 @@ body{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Martel Sans', sans-serif;
-    font-size:  1.5em;
     a{
+        display: table-cell;
+        position: absolute;
         background-color: rgba(183, 189, 189, 0.3);
         font-size: 12px;
         text-decoration: none;
-        margin-left: 1em;
+        left: 1em;
+        top: 1em;
         padding: 5px;
         color: rgba(0, 0, 0, 0.616);
+        border-radius: 5px;
     }
     .container{
         margin-top: 2em;
@@ -22,21 +25,24 @@ body{
             background-color: rgba(183, 189, 189, 0.3);
             padding:0.5em;
             border-radius: 5px;
+            font-size: 18px;
             input{
-                // font-size: 0.7em;
-                padding: 0.7em;
-                margin: 0.5em 0.5em 0.75em;
                 border-radius: 5px;
                 outline: none;
             }
             button{
+                margin-left: 1em;
                 font-size: 16px;
-                padding: 0.7em;
+                padding: 0.4em;
                 border-radius: 5px;
                 outline: none;
                 background: rgb(229, 12, 21);
                 color: whitesmoke;
                 border: 1px solid rgb(219, 67, 72);;
+            }
+            button:hover{
+                background: rgb(229, 12, 21);
+                color: whitesmoke;
             }
             button:active{
                 outline: none;
@@ -55,14 +61,13 @@ body{
         thead td{
             text-align:center;
             width: 11.5em;
-            font-size: 1.1em;
+            font-size: 18px;
             font-weight: 700;
         }
         tbody td {
             text-align:left;
-            // width: 25%;
             padding-left: 3em;
-            font-size: 1em;
+            font-size: 16px;
             font-weight: 400;
         }
 

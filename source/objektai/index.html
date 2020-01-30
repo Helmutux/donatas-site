@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Martel+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="shortcut icon" href="icon-bmw.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Namu darbas</title>
@@ -14,44 +17,62 @@
 <body>
     <a href="../../index.html#ferari">Grįžti į pradinį</a>
     <div class="container">
-        <form action="">
-            <label for="car">Automobilis</label>
-            <input type="text" id="car" placeholder="pridėti automobilį">
-            <label for="speed">Greitis</label>
-            <input type="number" id="speed" placeholder="nurodyti greitį">
-            <button type="submit" class="button">Pridėti</button>
+        <!-- pirma forma ir lentele  -->
+        <form class="col-6">
+            <div class="form-group col-12">
+                <label for="car">Automoblis</label>
+                <input type="text" class="form-control" id="car" placeholder="pridėti automobilį">
+            </div>
+            <div class="form-group col-12">
+                <label for="speed">Greitis</label>
+                <input type="number" class="form-control" id="speed" placeholder="nurodyti greitį">
+            </div>
+            <button type="submit" class="btn btn-primary">Pridėti</button>
         </form>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <td>Automobilis</td>
-                <td>Greitis (km/h)</td>
-            </tr>
-        </thead>
-        <tbody id="tablebody">
-            
-        </tbody>
-    </table>
 
-    <div class="container">
-        <form action="" id="speeed">
-            <label for="time">Laikas</label>
-            <input type="number" id="time" placeholder="sugaištas laikas, val">
-            <button type="submit" >Lenktyniauti</button>
+        <table class="table col-7">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Automobilis</th>
+                    <th scope="col">Greitis</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+
+            </tbody>
+        </table>
+      <!-- antra forma ir lentele -->
+        <form class="col-6" id="speeed">
+            <div class="form-group col-12">
+                <label for="time">Laikas</label>
+                <input type="number" class="form-control" id="time" placeholder="sugaištas laikas, val">
+            </div>
+            <button type="submit" class="btn btn-primary">Lenktyniauti</button>
         </form>
+
+        <table class="table col-7">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Automobilis</th>
+                    <th scope="col">Distancija (km)</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody2">
+
+            </tbody>
+        </table>
     </div>
-    <table>
-        <thead>
-            <tr>
-                <td>Automobilis</td>
-                <td>Distancija (km)</td>
-            </tr>
-        </thead>
-        <tbody id="tablebody2">
-            
-        </tbody>
-    </table>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
