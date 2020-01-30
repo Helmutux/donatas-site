@@ -57,7 +57,15 @@ body{
         margin-top: 1em;
         padding: 0.5em;
         border-radius: 5px;
-
+        .topleft {
+            border-top-left-radius: 5px;
+        }
+        .topright {
+            border-top-right-radius: 5px;
+        }
+        .thead-light th {
+            // background-color: rgba(225, 230, 233, 0.7);
+            border: none;
         thead td{
             text-align:center;
             width: 11.5em;
@@ -76,4 +84,5 @@ body{
         background-color: rgba(93, 95, 95, 0.5);
         color: whitesmoke;
     }
+}
 }
