@@ -1,0 +1,58 @@
+
+body{
+    background-image: url('scale.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+    background-color:  $smelis;
+    font-family: 'Oswald', sans-serif;
+    color: seashell;
+    a{
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        border: 1px solid $red;
+        color: $red;
+        border-radius: 5px;
+        padding: 0.2em 0.4em;
+        text-decoration: none;
+    }
+    #div{
+        margin: auto;
+        margin-top: 1em;
+        background-color: $pilka;
+        color: seashell;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 2px $pilka;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    form{
+        margin: auto;
+        margin-top: 3em;
+        label{
+            font-size: 20px;
+        }
+        
+    }
+    .btn-primary{
+        background-color: $red;
+        border: none;
+    }
+    .btn-primary:hover{
+        background: rgb(189, 85, 80);
+        outline: none;
+    }
+    .btn-primary:active{
+        background: rgb(189, 85, 80);
+        outline: none;
+    }
+}
+@media (max-width: 720px){
+    body{
+        background-size: 100%; 
+    }
+
+
+}

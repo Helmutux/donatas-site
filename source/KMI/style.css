@@ -1,0 +1,64 @@
+body {
+  background-image: url("scale.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-attachment: fixed;
+  background-color: #dddbc7;
+  font-family: 'Oswald', sans-serif;
+  color: seashell;
+}
+
+body a {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  border: 1px solid #a03d38;
+  color: #a03d38;
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+}
+
+body #div {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgba(139, 143, 148, 0.3);
+  color: seashell;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px 2px rgba(139, 143, 148, 0.3);
+          box-shadow: 2px 2px 10px 2px rgba(139, 143, 148, 0.3);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+body form {
+  margin: auto;
+  margin-top: 3em;
+}
+
+body form label {
+  font-size: 20px;
+}
+
+body .btn-primary {
+  background-color: #a03d38;
+  border: none;
+}
+
+body .btn-primary:hover {
+  background: #bd5550;
+  outline: none;
+}
+
+body .btn-primary:active {
+  background: #bd5550;
+  outline: none;
+}
+
+@media (max-width: 720px) {
+  body {
+    background-size: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
