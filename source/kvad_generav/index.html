@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/17e3549c29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bloku generavimas ir naikinimas</title>
+</head>
+
+<body>
+    <header class="container-flex">
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-12"><a href="../../index.html#kvgen">Grįžti pradžią</a></div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <h1>Stačiakampių kūrimas ir naikinimas
+                </h1>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-0">
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="ilgis">Ilgis</label>
+            <input type="number" min="20" id="ilgis">
+
+
+            <label for="aukstis">Aukstis</label>
+            <input type="number" min="20" id="aukstis">
+
+
+            <label for="spalva">Spalva</label>
+            <select id="spalva">
+                <option value="default" selected disabled><i>pasirinkti spalva</i></option>
+                <option value="#3c3ce4">Melyna</option>
+                <option value="#0ba506">Zalia</option>
+                <option value="#f8f409">Geltona</option>
+                <option value="#500803">Ruda</option>
+                <option value="#c23a30">Raudona</option>
+                <option value="coral">Coral</option>
+                <option value="cyan">Cyan</option>
+            </select>
+            <button type="submit">Kurti blokeli</button>
+        </form>
+
+
+        <div style="display: flex; flex-wrap: wrap;" id="divss">
+
+        </div>
+    </main>
+
+
+    <footer class="container-flex">
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.facebook.com/kulvinskas"><i class="fab fa-facebook-square">
+                        kulvinskas</i></a></li>
+
+            <li class="list-group-item">&copy; Teisė kopijuoti ir platinti suteikima</li>
+            <li class="list-group-item">2020-02-02</li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="sss.js"></script>
+</body>
+
+</html>

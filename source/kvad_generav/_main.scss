@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(248, 250, 230);
+  header {
+    border-bottom: 3px solid rgb(129, 134, 82);
+    color: rgb(129, 134, 82);
+    font-size: 22px;
+    flex-wrap: wrap;
+    background-color: rrgb(145, 151, 91);
+    h1 {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+    a {
+      color: rgb(129, 134, 82);
+      font-size: 12px;
+      margin-left: 2em;
+    }
+  }
+  main{
+    min-height: 35vw;
+  }
+  form {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    label {
+      font-size: 22px;
+    }
+    input {
+      font-size: 18px;
+      border-radius: 5px;
+      outline: none;
+    }
+    option {
+      font-size: 20px;
+      border-radius: 5px;
+      padding: 0.5em;
+      outline: none;
+    }
+    button {
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 0.3em 0.5em;
+      outline: none;
+      background-color: rgb(121, 119, 26);
+      color: seashell;
+      // border: none;
+    }
+    button:hover {
+      background-color: rgb(153, 151, 32);
+      outline: none;
+
+      // border: none;
+    }
+    button:active {
+      transform: scale(0.95);
+      outline: none;
+    }
+  }
+  .zero {
+    opacity: 0;
+    box-shadow: none;
+    transform: scale(0.3);
+    transition: ease-in-out 1s;
+  }
+  footer {
+    border-top: 3px solid rgb(129, 134, 82);
+    color: rgb(129, 134, 82);
+    font-size: 12px;
+    flex-wrap: wrap;
+    background-color: rgba(192, 199, 209, 0.75);
+    .list-group-item {
+      color: rgb(129, 134, 82);
+      font-size: 12px;
+      margin-left: 2em;
+      background-color: rgba(192, 199, 209, 0);
+      border: none;
+      a{
+        color: rgb(129, 134, 82);
+      }
+
+    }
+  }
+}
