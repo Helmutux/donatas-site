@@ -7,7 +7,7 @@ body {
   font-family: 'Martel Sans', sans-serif;
 }
 
-body a {
+body #back {
   display: table-cell;
   position: absolute;
   background-color: rgba(183, 189, 189, 0.3);
@@ -20,8 +20,12 @@ body a {
   border-radius: 5px;
 }
 
+body main {
+  min-height: 35vw;
+}
+
 body .container {
-  margin-top: 2em;
+  margin-top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,5 +105,26 @@ body table .thead-light th tbody td {
 body table .select {
   background-color: rgba(93, 95, 95, 0.5);
   color: whitesmoke;
+}
+
+footer {
+  border-top: 3px solid #e50c15;
+  color: #e50c15;
+  font-size: 13px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(192, 199, 209, 0.75);
+}
+
+footer .list-group-item {
+  color: #e50c15;
+  font-size: 12px;
+  margin-left: 2em;
+  background-color: rgba(192, 199, 209, 0);
+  border: none;
+}
+
+footer .list-group-item a {
+  color: #e50c15;
 }
 /*# sourceMappingURL=style.css.map */

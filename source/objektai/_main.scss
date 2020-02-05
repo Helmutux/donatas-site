@@ -5,7 +5,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Martel Sans', sans-serif;
-    a{
+    #back{
         display: table-cell;
         position: absolute;
         background-color: rgba(183, 189, 189, 0.3);
@@ -17,8 +17,11 @@ body{
         color: rgba(0, 0, 0, 0.616);
         border-radius: 5px;
     }
+    main{
+        min-height: 35vw;
+      }
     .container{
-        margin-top: 2em;
+        margin-top: 3em;
         display: flex;
         flex-wrap: wrap;
         form{
@@ -85,4 +88,23 @@ body{
         color: whitesmoke;
     }
 }
+
 }
+footer {
+    border-top: 3px solid rgb(229, 12, 21);
+    color: rgb(229, 12, 21);
+    font-size: 13px;
+    flex-wrap: wrap;
+    background-color: rgba(192, 199, 209, 0.75);
+    .list-group-item {
+      color: rgb(229, 12, 21);
+      font-size: 12px;
+      margin-left: 2em;
+      background-color: rgba(192, 199, 209, 0);
+      border: none;
+      a{
+        color: rgb(229, 12, 21);
+      }
+
+    }
+  }
