@@ -1,0 +1,69 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    background: rgb(148, 111, 55);
+    #back{
+        display: block;
+        text-decoration: none;
+        color: blanchedalmond;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    h1{
+        font-size: 30px;
+        color: blanchedalmond;
+        text-align: center;
+    }
+    main{
+        min-height: 34vw;
+    }
+    #rodyti{
+        text-align: center;
+        button{
+            padding: 0.7em;
+            margin-bottom: 2em;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: blanchedalmond;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(219, 199, 168);
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+    }
+    table{
+        margin: auto;
+        border-collapse: collapse;
+        background-color: blanchedalmond;
+        margin-bottom: 1em;
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    }
+    
+    .red{
+        background-color: rgba(205, 92, 92, 0.5);
+    }
+    .right{
+        text-align: right;
+    }
+    footer {
+        border-top: 3px solid blanchedalmond;
+        color: blanchedalmond;
+        
+        flex-wrap: wrap;
+        background-color: rgb(148, 111, 55);
+        li{
+            padding: 0.3em;
+            font-size: 14px;
+        }
+          a{
+            color: blanchedalmond;
+          }
+    
+        }
+      }
