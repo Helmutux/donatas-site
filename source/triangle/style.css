@@ -36,6 +36,7 @@ button:active {
 }
 
 .atsakas {
+  margin-top: 30px;
   padding: 40px 0px 100px 20px;
   width: 50%;
   background-color: rgba(181, 201, 108, 0.6);
