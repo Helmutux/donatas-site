@@ -1,3 +1,13 @@
+body {
+  background-color: bisque;
+}
+
+a {
+  display: block;
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +21,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30%;
-  background-color: bisque;
   height: 100vh;
   margin-bottom: 40px;
   padding: 30px;
@@ -30,7 +39,7 @@ button:active {
   padding: 40px 0px 100px 20px;
   width: 50%;
   background-color: rgba(181, 201, 108, 0.6);
-  border: palegoldenrod 1px solid;
+  border: #065f5e 1px solid;
   border-radius: 10px;
   -webkit-box-shadow: lightslategrey 1px 1px 10px 1px;
           box-shadow: lightslategrey 1px 1px 10px 1px;

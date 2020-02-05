@@ -1,3 +1,11 @@
+body{
+    background-color: bisque;
+}
+a{
+    display: block;
+    margin-left: 2em;
+    padding-top: 1em;
+}
 .container{
     display: flex;
     margin: auto;
@@ -7,7 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
-    background-color: bisque;
+   
     height: 100vh;
     margin-bottom: 40px;
     padding: 30px;
@@ -19,7 +27,7 @@ button:active{
     transform: scale(0.97);
 }
 .atsakas{
-    // margin: auto;
+   
     padding: 40px 0px 100px 20px;
     width: 50%;
     background-color: rgba($color: #b5c96c, $alpha: 0.6);
