@@ -13,6 +13,6 @@ function createButton () {
         main.innerHTML += mygtukas;
         console.log(clicks);
     } else {
-        return alert('You reach maximum clicks!');
+        return alert('Jūs paspaudėte maksimalų leidžiamą kartų kiekį!');
     }
 }
