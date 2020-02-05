@@ -1,65 +1,86 @@
-
-body{
-    background-image: url('scale.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-attachment: fixed;
-    background-color:  $smelis;
-    font-family: 'Oswald', sans-serif;
+body {
+  background-image: url("scale.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-attachment: fixed;
+  background-color: $smelis;
+  font-family: "Oswald", sans-serif;
+  color: seashell;
+  #back {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border: 1px solid $smelis;
+    color: $smelis;
+    border-radius: 5px;
+    padding: 0.2em 0.4em;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  main{
+      min-height: 35vw;
+  }
+  #div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 1em;
+    background-color: $pilka;
     color: seashell;
-    a{
-        position: absolute;
-        top: 1em;
-        left: 1em;
-        border: 1px solid $red;
-        color: $red;
-        border-radius: 5px;
-        padding: 0.2em 0.4em;
-        text-decoration: none;
-        font-size: 12[x];
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px grey;
+    font-weight: 500;
+    font-size: 35px;
+  }
+  form {
+    margin: auto;
+    margin-top: 3em;
+    label {
+      font-size: 35px;
+      font-weight: 500;
     }
-    #div{
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        margin-top: 1em;
-        background-color: $pilka;
-        color: seashell;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 1px grey;
-        font-weight: 500;
-        font-size: 35px;
-    }
-    form{
-        margin: auto;
-        margin-top: 3em;
-        label{
-            font-size: 35px;
-            font-weight: 500;
-
-        }
-        
-    }
-    .btn-primary{
-        background-color: $red;
-        border: none;
-        font-size: 25px;
-    }
-    .btn-primary:hover{
-        background: rgb(189, 85, 80);
-        outline: none;
-    }
-    .btn.btn-primary:active{
-        background: rgb(189, 85, 80);
-        border: none;
-        outline: none;
-    }
+  }
+  .btn-primary {
+    background-color: $red;
+    border: none;
+    font-size: 25px;
+  }
+  .btn-primary:hover {
+    background: rgb(189, 85, 80);
+    outline: none;
+  }
+  .btn.btn-primary:active {
+    background: rgb(189, 85, 80);
+    border: none;
+    outline: none;
+  }
 }
-@media (max-width: 720px){
-    body{
-        background-size: 100%; 
+.container-flex {
+  width: 100%;
+  background-color: $red;
+  color: whitesmoke;
+  .link {
+    font-size: 12px;
+    color: whitesmoke;
+    margin-left: 1em;
+  }
+  h1 {
+    padding: 1.3em 0;
+    color: $smelis;
+  }
+  .list-group-item {
+    background-color: $red;
+    color: whitesmoke;
+    border: none;
+    font-size: 13px;
+    a {
+      color: whitesmoke;
     }
-
-
+  }
+}
+@media (max-width: 720px) {
+  body {
+    background-size: 100%;
+  }
 }

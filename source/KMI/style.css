@@ -5,20 +5,24 @@ body {
   background-size: 50%;
   background-attachment: fixed;
   background-color: #dddbc7;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: seashell;
 }
 
-body a {
+body #back {
   position: absolute;
   top: 1em;
   left: 1em;
-  border: 1px solid #a03d38;
-  color: #a03d38;
+  border: 1px solid #dddbc7;
+  color: #dddbc7;
   border-radius: 5px;
   padding: 0.2em 0.4em;
   text-decoration: none;
-  font-size: 12 [x];
+  font-size: 16px;
+}
+
+body main {
+  min-height: 35vw;
 }
 
 body #div {
@@ -63,6 +67,34 @@ body .btn.btn-primary:active {
   background: #bd5550;
   border: none;
   outline: none;
+}
+
+.container-flex {
+  width: 100%;
+  background-color: #a03d38;
+  color: whitesmoke;
+}
+
+.container-flex .link {
+  font-size: 12px;
+  color: whitesmoke;
+  margin-left: 1em;
+}
+
+.container-flex h1 {
+  padding: 1.3em 0;
+  color: #dddbc7;
+}
+
+.container-flex .list-group-item {
+  background-color: #a03d38;
+  color: whitesmoke;
+  border: none;
+  font-size: 13px;
+}
+
+.container-flex .list-group-item a {
+  color: whitesmoke;
 }
 
 @media (max-width: 720px) {
