@@ -11,7 +11,7 @@ body {
 
 header {
   background-color: #116466;
-  min-height: 5em;
+  min-height: 7em;
   color: floralwhite;
   text-align: center;
 }
@@ -29,8 +29,8 @@ header #back {
 }
 
 header h2 {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
   font-weight: 700;
   text-shadow: 2px 1px #2c3531;
 }
@@ -41,7 +41,7 @@ td {
 }
 
 .container {
-  min-height: calc(100% - 9em);
+  min-height: calc(100% - 11.5em);
   overflow: auto;
   padding-bottom: 1em;
 }
