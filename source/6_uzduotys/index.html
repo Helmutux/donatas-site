@@ -6,91 +6,330 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../../icons/7task.png">
+    <!-- <link rel="icon" href="../../icons/7task.png"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>7 užduotys</title>
 </head>
 
 <body>
-
-    <head class="container">
-        <a href="../../index.html#6task">Grįžti į pradinį</a>
+    <header class="container-flex">
+        <a href="../../index.html#6task" id="back">Grįžti į pradinį</a>
         <h1 class="text-center">6 užduotys su ciklais</h1>
-    </head>
+    </header>
     <main class="container">
-        <div class="col-lg-12">
-            <h3>
-                1 užduotis
-            </h3>
+
+        <!-- 1 uzduotis  -->
+        <div class="col-lg-12" id="task_1">
+            <h3>1 užduotis</h3>
             <p>
-                Parašyti programą, pateikiančią ekrane geometrinę seką skaičių. Pradinis skaičius (startNumber), daugiklis (multiplier), ciklų skaičius (quantity) pasirenkami laisvai įvedant formos pagalba.
+                Parašyti programą, pateikiančią ekrane geometrinę seką skaičių. Pradinis skaičius,
+                daugiklis, ciklų skaičius(kiekis) <i>pasirenkami laisvai</i> įvedant formos pagalba. Rezultatą išvesti į ekraną.
             </p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#task1">Pateikti parametrus
+                skaičiavimui</button>
+
+            <div class="modal fade" id="task1" tabindex="-1" role="dialog" aria-labelledby="task1Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="task1Label">Duomenys užduočiai</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="startNumber_t1" class="col-form-label">Pradinis skaičius</label>
+                                    <input type="number" class="form-control" id="startNumber_t1" min="0"
+                                        placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="multiplier_t1" class="col-form-label">Daugiklis (skaičius, iš kurio
+                                        dauginsime)</label>
+                                    <input type="number" class="form-control" id="multiplier_t1" min="0"
+                                        placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantity_t1" class="col-form-label">Ciklų skaičius (kiek kartų vykdyti
+                                        daugybą)</label>
+                                    <input type="number" class="form-control" id="quantity_t1" min="0" placeholder="0">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                id="answer_t1">Suskaičiuoti ir pateikti atsakymą</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task1_answer">
+
+            </div>
         </div>
-        <div class="col-lg-12">
+
+        <!-- 2 uzduotis  -->
+        <div class="col-lg-12" id="task_2">
             <h3>
                 2 užduotis
             </h3>
             <p>
-                Parašyti programą, skaičiuojančią sumą visų skaičių, esančių tarp pirmojo (firstNumber) ir paskutiniojo(lastNumber)(įvedami formos pagalba).
-                Galutinė suma (sum) pateikiama ekrane.
+                Parašyti programą, skaičiuojančią sumą visų skaičių, esančių tarp <i>laisvai pasirinktų</i> pirmojo(imtinai) ir
+                paskutiniojo(imtinai).
+                Galutinė suma pateikti ekrane.
             </p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#task2">Pateikti parametrus
+                skaičiavimui</button>
+
+            <div class="modal fade" id="task2" tabindex="-1" role="dialog" aria-labelledby="task2Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="task2Label">Duomenys užduočiai</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="firstNumber_t2" class="col-form-label">Pirmasis skaičius
+                                    </label>
+                                    <input type="number" class="form-control" id="firstNumber_t2" min="0"
+                                        placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastNumber_t2" class="col-form-label">Paskutinis skaičius</label>
+                                    <input type="number" class="form-control" id="lastNumber_t2" min="0"
+                                        placeholder="0">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                id="answer_t2">Suskaičiuoti ir pateikti atsakymą</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task2_answer">
+
+            </div>
         </div>
-        <div class="col-lg-12">
+
+        <!-- 3 uzduotis  -->
+        <div class="col-lg-12" id="task_3">
             <h3>
                 3 užduotis
             </h3>
             <p>
-                
-
-                Напишите универсальную программу, которая находит произведение всех чётных чисел из последовательности
-                от 1 до n. Число, до которого идёт последовательность (включительно), записано в переменную lastNumber. Найдите произведение всех чисел и сохраните результат в переменную multiplicationResult.
+                Jonas fizinio aktyvumo ir dietos pagalba nutarė sulieknėti. Jei laikysis tinkamo režimo, kas savaitę numes po 1% savo svorio.
+                Parašyti programą, kuri gavusi <i>pasirinktas</i> reikšmes esamo svorio ir siekiamo svorio paskaičiuotų terminą (savaitėmis), per kurį Jonas pasieks tikslą. Rezultatą išvesti į ekraną.
             </p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#task3">Pateikti parametrus
+                skaičiavimui</button>
+
+            <div class="modal fade" id="task3" tabindex="-1" role="dialog" aria-labelledby="task3Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="task3Label">Duomenys užduočiai</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="initialWeight_t3" class="col-form-label">Dabartinis svoris
+                                    </label>
+                                    <input type="number" class="form-control" id="initialWeight_t3" min="0"
+                                        placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="targetWeight_t3" class="col-form-label">Siekiamas svoris</label>
+                                    <input type="number" class="form-control" id="targetWeight_t3" min="0"
+                                        placeholder="0">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                id="answer_t3">Suskaičiuoti ir pateikti atsakymą</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task3_answer">
+
+            </div>
         </div>
-        <div class="col-lg-12">
+
+        <!-- 4 uzduotis  -->
+        <div class="col-lg-12" id="task_4">
             <h3>
                 4 užduotis
             </h3>
             <p>
-                Parašyti programą, surandančią visus pasirinkto skaičiaus (number) daliklius į sveikus skaičius, išskyrus 1 ir patį skaičių. Rezultatą išveskite į ekraną.
+                Parašyti programą, surandančią visus <i>pasirinkto</i> skaičiaus daliklius į sveikus skaičius,
+                išskyrus 1 ir patį skaičių. Rezultatą išvesti į ekraną.
             </p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#task4">Pateikti parametrus
+                skaičiavimui</button>
+
+            <div class="modal fade" id="task4" tabindex="-1" role="dialog" aria-labelledby="task4Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="task4Label">Duomenys užduočiai</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="number_t4" class="col-form-label">Pasirinktas skaičius
+                                    </label>
+                                    <input type="number" class="form-control" id="number_t4" min="0"
+                                        placeholder="0">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                id="answer_t4">Suskaičiuoti ir pateikti atsakymą</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task4_answer">
+
+            </div>
         </div>
-        <div class="col-lg-12">
+
+        <!-- 5 uzduotis  -->
+        <div class="col-lg-12" id="task_5">
             <h3>
                 5 užduotis
             </h3>
             <p>
-                Parašykite programą (ciklo pagalba), randančią iš kelių skaitmenų(quantity) sudarytas vienas ar kitas skaičius(number) (įvedamas formos pagalba).
+                Parašyti programą, randančią iš kelių skaitmenų sudarytas vienas ar kitas <i>pasirinktas</i>
+                skaičius.
                 Rezultatą išvesti į ekraną.
-                
             </p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#task5">Pateikti parametrus
+                skaičiavimui</button>
+
+            <div class="modal fade" id="task5" tabindex="-1" role="dialog" aria-labelledby="task5Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="task5Label">Duomenys užduočiai</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="number_t5" class="col-form-label">Pasirinktas skaičius
+                                    </label>
+                                    <input type="number" class="form-control" id="number_t5" min="0"
+                                        placeholder="0">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                id="answer_t5">Suskaičiuoti ir pateikti atsakymą</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task5_answer">
+
+            </div>
         </div>
-        <div class="col-lg-12">
+
+        <!-- 6 uzduotis  -->
+        <div class="col-lg-12" id="task_6">
             <h3>
                 6 užduotis
             </h3>
             <p>
-            Suskaičiuokite suminį proteino raciono kiekį per užduotąjį periodą.
-            Sąlygos:
-            1. Skaičiavimas pradedamas nuo pirmadienio. Tai pirmoji diena.
-            2. Proteinas vartojamas kas trečią dieną (t.y. pirmadienį - ne, antradienį - ne, trečiadienį - taip, ir t.t)
-            3. Darbo dienomis vartojama dviguba porcija lyginant su savaitgaliu.
-            4. Periodas užduodamas dienų skaičiumi.
+                Jonui, vykdant 3 užduotį, būtina vartoti papildomai proteiną.
+                Suskaičiuoti suminį proteino raciono kiekį per <i>užduotąjį</i> periodą.
+                Sąlygos: <br>
+                1. Skaičiavimas pradedamas nuo pirmadienio. Tai pirmoji diena. <br>
+                2. Proteinas vartojamas kas trečią dieną (t.y. pirmadienį - ne, antradienį - ne, trečiadienį - taip, ir
+                t.t) <br>
+                3. Darbo dienomis vartojama dviguba porcija (lygi 200g) lyginant su savaitgaliu. <br>
+                4. Periodas <i>užduodamas</i>  dienų skaičiumi. <br>
 
-            Pateikti į ekraną suminį kiekį (total).
+                Pateikti į ekraną suminį kiekį (total).
             </p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#task6">Pateikti parametrus
+                skaičiavimui</button>
+
+            <div class="modal fade" id="task6" tabindex="-1" role="dialog" aria-labelledby="task6Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="task6Label">Duomenys užduočiai</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="number_t6" class="col-form-label">Pasirinktas periodas dienomis
+                                    </label>
+                                    <input type="number" class="form-control" id="number_t6" min="0"
+                                        placeholder="0">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                id="answer_t6">Suskaičiuoti ir pateikti atsakymą</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task6_answer">
+
+            </div>
         </div>
 
     </main>
+    <footer class="container-flex">
+        <ul class="list-group list-group-horizontal container">
+            <li class="list-group-item"><a href="https://www.facebook.com/kulvinskas"><i
+                        class="fab fa-facebook-square"></i> kulvinskas</a></li>
+            <li class="list-group-item"> &copy; Kopijavimas ir platinimas neribojamas</li>
+            <li class="list-group-item">2020-02-08</li>
+        </ul>
+    </footer>
 
 
-    <script src="scr1.js"></script>
-    <script src="scr2.js"></script>
-    <script src="scr3.js"></script>
-    <script src="scr4.js"></script>
-    <script src="scr5.js"></script>
-    <script src="scr6.js"></script>
-    <script src="scr7.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -100,6 +339,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/17e3549c29.js" crossorigin="anonymous"></script>
+    <script src="scr1.js"></script>
+    <script src="scr2.js"></script>
+    <script src="scr3.js"></script>
+    <script src="scr4.js"></script>
+    <script src="scr5.js"></script>
+    <script src="scr6.js"></script>
 </body>
 
 

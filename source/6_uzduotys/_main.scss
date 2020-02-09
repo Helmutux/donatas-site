@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    font-family: "Titillium Web", sans-serif;
+    height: 100%;
+  }
+  header {
+    background-color: #379683;
+    min-height: 7em;
+    color: floralwhite;
+    text-align: center;
+    #back{
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      border: 1px solid floralwhite;
+      color: floralwhite;
+      border-radius: 5px;
+      padding: 0.2em 0.4em;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    h1 {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+      font-weight: 700;
+      font-size: 3em;
+      text-shadow: 2px 1px #2c3531;
+    }
+  }
+.container {
+    min-height: calc(100% - 14em);
+    overflow: auto;
+    padding-bottom: 1em;
+    h3{
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    #task_1{
+        background-color: mediumaquamarine;
+        border-bottom: 2px solid #635e5e;
+        
+    }
+    #task_2{
+        background-color: #7fe0c0;
+        border-bottom: 2px solid #635e5e;
+    }
+    #task_3{
+        background-color: #7fe0db;
+        border-bottom: 2px solid #635e5e;
+    }
+    #task_4{
+        background-color: #6ac5c1;
+        border-bottom: 2px solid #635e5e;
+    }
+    #task_5{
+        background-color: #6eaac2;
+        border-bottom: 2px solid #635e5e;
+    }
+    #task_6{
+        background-color: #6e95c2;
+        border-bottom: 1px solid #635e5e;
+    }
+    .task_answer{
+      border-radius: 5px;
+      background-color: rgba(209, 232, 226, 0.4);
+      box-shadow: 2px 2px 10px 2px grey;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+  }
+  .btn-dark {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    outline: none;
+    transition-duration: 0.3s;
+  }
+  .btn.btn-dark:hover{
+    background-color: #635e5e;
+  }
+  .btn:active {
+    transform: scale(0.93);
+    outline: none;
+  }
+  footer {
+    background-color: #05386B;
+    position: relative;
+    min-height: 5em;
+    margin-top: -1em;
+    clear: both;
+    flex-wrap: wrap;
+  
+    .list-group-item {
+      margin-top: 1em;
+      color: floralwhite;
+      font-size: 15px;
+      margin-left: 1em;
+      background-color: #05386B;
+      border: none;
+    }
+    a {
+      color: floralwhite;
+    }
+  }
+  
