@@ -29,6 +29,7 @@
       font-weight: 700;
       font-size: 3em;
       text-shadow: 2px 1px #2c3531;
+      margin-bottom: 0;
     }
   }
 .container {
@@ -44,28 +45,28 @@
     }
     #task_1{
         background-color: mediumaquamarine;
-        border-bottom: 2px solid #635e5e;
+        border-bottom: 1px solid #635e5e;
         
     }
     #task_2{
         background-color: #7fe0c0;
-        border-bottom: 2px solid #635e5e;
+        border-bottom: 1px solid #635e5e;
     }
     #task_3{
         background-color: #7fe0db;
-        border-bottom: 2px solid #635e5e;
+        border-bottom: 1px solid #635e5e;
     }
     #task_4{
         background-color: #6ac5c1;
-        border-bottom: 2px solid #635e5e;
+        border-bottom: 1px solid #635e5e;
     }
     #task_5{
         background-color: #6eaac2;
-        border-bottom: 2px solid #635e5e;
+        border-bottom: 1px solid #635e5e;
     }
     #task_6{
         background-color: #6e95c2;
-        border-bottom: 1px solid #635e5e;
+        border-bottom: 1px solid #6e95c2;
     }
     .task_answer{
       border-radius: 5px;
