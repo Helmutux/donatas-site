@@ -6,9 +6,16 @@ task_4.onclick = function (event) {
   event.preventDefault();
 
   var number = document.getElementById('number_t4').value;
+  if(number > 10000000 && number<180000000){
+    alert('Pasirinktas skaičius gali sulėtinti ar sustabdyti naršyklės darbą');
+  }
+  if(number > 180000000){
+    return alert('Pasirinktas skaičius gali sustabdyti naršyklės darbą. Skaičiavimų vykdymas nutraukiamas');
+  }
   var i = 2;
   while (i < number) {
     if (number % i === 0) {
+      console.log(i);
       seka4.push(i);
       i++;
     } else {
