@@ -51,6 +51,11 @@ td {
   margin-bottom: 1em;
 }
 
+.btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .btn:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

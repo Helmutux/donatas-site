@@ -43,6 +43,10 @@ td {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.btn:hover{
+  transform: scale(1.15);
+  transition: 0.2s;
+}
 .btn:active {
   transform: scale(0.9);
 }
