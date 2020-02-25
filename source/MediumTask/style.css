@@ -28,6 +28,19 @@ header #back {
   font-size: 16px;
 }
 
+header #back:hover {
+  background-color: #147c7e;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header #back:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 header h2 {
   padding-top: 1.75em;
   padding-bottom: 1.75em;
@@ -54,6 +67,8 @@ td {
 .btn:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .btn:active {
