@@ -101,6 +101,8 @@ header h1 {
 
 .btn.btn-dark:hover {
   background-color: #635e5e;
+  transform: scale(1.1);  
+  transition: 0.2s;
 }
 
 .btn:active {
