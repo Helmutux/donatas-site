@@ -24,6 +24,19 @@ h3, h5 {
   margin-top: 1em;
 }
 
+.button {
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+.info {
+  color: #7e1f56;
+}
+
 h1 {
   font-family: 'Baloo 2', cursive;
   color: #e7e3e3;
