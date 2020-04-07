@@ -101,10 +101,16 @@ but019.onclick = function () {
   inf019.classList.toggle('hide');
 };
 
-var but020 = document.querySelector('#d020');
-var inf020 = document.querySelector('.inf020');
-but020.onclick = function () {
-  inf020.classList.toggle('hide');
+var but022 = document.querySelector('#d022');
+var inf022 = document.querySelector('.inf022');
+but022.onclick = function () {
+  inf022.classList.toggle('hide');
+};
+
+var but023 = document.querySelector('#d023');
+var inf023 = document.querySelector('.inf023');
+but023.onclick = function () {
+  inf023.classList.toggle('hide');
 };
 
 
