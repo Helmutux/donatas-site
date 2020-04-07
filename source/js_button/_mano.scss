@@ -1,0 +1,114 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    padding: 5px;
+}
+header h1, p, button{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+header button{
+    position: relative;
+    text-align: center;
+}
+main{
+    border: grey 2px solid;
+    border-radius: 10px;
+    width: 1000px; 
+    height:600px; 
+    margin:auto; 
+    background-color:burlywood; 
+    position: relative;
+}
+button{
+    border: 1px solid #006250;
+    padding: 1vw; 
+    position: absolute; 
+    border-radius: 10px; 
+    outline: 0;
+    color: oldlace;
+    background-color: #006280;
+}
+
+button:active{
+    transform: scale(0.97); 
+}
+
+@media (max-width: 992px){
+    h1{
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    main {
+        width: 780px;
+        height: 400px;
+    }
+    button{
+        padding: 1.5vw; 
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 1.7em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    main {
+        width: 610px;
+        height: 300px;
+    }
+    button{
+        padding: 2vw; 
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    main {
+        width: 390px;
+        height: 210px;
+    }
+    button{
+        padding: 2.5vw; 
+    }
+}
+@media (max-width: 375px){
+    h1{
+        font-size: 1.3em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    main {
+        width: 300px;
+        height: 180px;
+        }
+    button{
+        padding: 3vw; 
+    }
+}
+@media (max-width: 320px){
+    h1{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    main {
+        width: 270px;
+        height: 150px;
+    }
+    button{
+        padding: 4vw; 
+    }
+}
