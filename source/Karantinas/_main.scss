@@ -5,14 +5,14 @@ body{
 }
 
 
-header.container-flex{
+header.container-flex, footer.container-flex{
     background-color: brown;
     .link{
         display: inline-block;
         font-size: 14px;
         color: whitesmoke;    
-        margin-left: 0.5em;
-        margin-top: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
         padding: 0.3em;
         border: 1px solid whitesmoke;
         border-radius: 5px;    
@@ -25,6 +25,7 @@ h3, h5 {
 .button{
     border-radius: 5px;
     font-size: 12px;
+    margin-bottom: 0.25em;
 }
 .hide{
     display: none;
