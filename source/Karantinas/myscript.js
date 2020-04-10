@@ -124,3 +124,9 @@ var inf025 = document.querySelector('.inf025');
 but025.onclick = function () {
   inf025.classList.toggle('hide');
 };
+
+var but026 = document.querySelector('#d026');
+var inf026 = document.querySelector('.inf026');
+but026.onclick = function () {
+  inf026.classList.toggle('hide');
+};
