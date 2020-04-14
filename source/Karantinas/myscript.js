@@ -130,3 +130,9 @@ var inf026 = document.querySelector('.inf026');
 but026.onclick = function () {
   inf026.classList.toggle('hide');
 };
+
+var but030 = document.querySelector('#d030');
+var inf030 = document.querySelector('.inf030');
+but030.onclick = function () {
+  inf030.classList.toggle('hide');
+};
