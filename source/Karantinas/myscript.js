@@ -136,3 +136,23 @@ var inf030 = document.querySelector('.inf030');
 but030.onclick = function () {
   inf030.classList.toggle('hide');
 };
+
+var but031 = document.querySelector('#d031');
+var inf031 = document.querySelector('.inf031');
+but031.onclick = function () {
+  inf031.classList.toggle('hide');
+};
+
+var but032 = document.querySelector('#d032');
+var inf032 = document.querySelector('.inf032');
+but032.onclick = function () {
+  inf032.classList.toggle('hide');
+};
+
+var but033 = document.querySelector('#d033');
+var inf033 = document.querySelector('.inf033');
+but033.onclick = function () {
+  inf033.classList.toggle('hide');
+};
+
+
