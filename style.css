@@ -121,7 +121,15 @@ body {
 .skill-js {
   background-image: url("img/icon-js.svg");
 }
-
+.skill-sql {
+  background-image: url("img/icon-sql.ico");
+}
+.skill-php {
+  background-image: url("img/icon-php.svg");
+}
+.skill-java {
+  background-image: url("img/icon-java.svg");
+}
 .level {
   margin: 4px 0 16px;
   padding: 0;
