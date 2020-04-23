@@ -167,4 +167,14 @@ but037.onclick = function () {
   inf037.classList.toggle('hide');
 };
 
+var but038 = document.querySelector('#d038');
+var inf038 = document.querySelector('.inf038');
+but038.onclick = function () {
+  inf038.classList.toggle('hide');
+};
 
+var but039 = document.querySelector('#d039');
+var inf039 = document.querySelector('.inf039');
+but039.onclick = function () {
+  inf039.classList.toggle('hide');
+};
