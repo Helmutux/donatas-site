@@ -190,3 +190,9 @@ var inf056 = document.querySelector('.inf056');
 but056.onclick = function () {
   inf056.classList.toggle('hide');
 };
+
+var but071 = document.querySelector('#d071');
+var inf071 = document.querySelector('.inf071');
+but071.onclick = function () {
+  inf071.classList.toggle('hide');
+};
